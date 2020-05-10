@@ -25,7 +25,7 @@ SECRET_KEY = 'z_*3+*mt0&=+kp(h-$g3uf=9gl*6k5#!2pas$j9#)i@xe^!t1='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", "192.168.0.101", "localhost"]
+ALLOWED_HOSTS = ["127.0.0.1", "192.168.0.101", "localhost", "165.22.113.93" ]
 
 
 # Application definition
@@ -123,9 +123,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
 
 
 #channels
@@ -139,7 +136,3 @@ CHANNEL_LAYERS = {
     },
 }
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
